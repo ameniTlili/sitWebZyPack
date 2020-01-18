@@ -1,0 +1,178 @@
+<html>
+<head>
+<meta charset="utf-8">
+<!--Fonts-->
+<link href="http://fonts.googleapis.com/css?family=Anton" rel="stylesheet" type="text/css">
+<!-- by Ameni TLILI mail:ameni1tlili@gmail.com tel:55752363-->
+<!--CSS-->
+<link rel="stylesheet" href="css/devis.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body style="min-height: 1149px; overflow: visible;">
+
+<a href="index.html#!/page_home" ><img src="images/sugar.png" alt="" class="logo_devis"></a>
+<div id="container">
+<div><a href="index.html#!/page_devis" ><img src="images/devis.png" alt=""  style="width: 150px;height: 52px;"></a></div>
+				<form action="devis_sugar.php" method='post'>
+                                        
+                      <input class="input" type="text"  onfocus="if(this.value == 'Nom:') { this.value = ''; }" 
+                      							onblur="if(this.value == '') { this.value = 'Nom:'; }"
+ 														value="Nom:" name='nom'>
+                    
+                     
+                  	 <input class="input" type="email" onfocus="if(this.value == 'E-mail:') { this.value = ''; }" 
+                      						  onblur="if(this.value == '') { this.value = 'E-mail:'; }"
+ 													  value="E-mail:" name='email'>
+                    
+                      <input class="input" type="tel" onfocus="if(this.value == 'Tél: ') { this.value = ''; }" 
+                      						  onblur="if(this.value == '') { this.value = 'Tél: '; }"
+ 													  value="Tél: "  name='tel'>
+                    <input class="input" type="text"  onfocus="if(this.value == 'adr:') { this.value = ''; }" 
+                      						 onblur="if(this.value == '') { this.value = 'adr:'; }"
+ 													 value="adr:"  name='adr'>
+                  
+                       <br><br>   
+                       
+                     
+                         <p style="color: #ff25ff; font-size: 21px;"> Lieu de livraison(obligatoire)<br> <br><br> 
+                      <span >
+                      <select name="lieu"  aria-required="true" aria-invalid="false" style="width:324px;padding:10px 8px 10px 15px;color:#717efb;outline:none;margin:0;font:14px;background-color:#fff;">
+                      <option style="line-height: 50px;"value="Ariana">Ariana</option>
+                      <option value="Beja">Béja</option>
+                      <option value="Ben_Arous">Ben Arous</option>
+                      <option value="Bizerte ">Bizerte </option>
+                      <option value="Gabes">Gabès</option>
+                      <option value="Gafsa">Gafsa</option>
+                      <option value="Jendouba ">Jendouba</option>
+                      <option value="Kairouan">Kairouan</option>
+                      <option value="Kasserine">Kasserine</option>
+                      <option value="Kebili ">Kébili</option>
+                      <option value="La_Manouba">La Manouba</option>
+                      <option value="Le_Kef">Le Kef</option>
+                      <option value="Mahdia">Mahdia</option>
+                      <option value="Medenine">Médenine </option>
+                      <option value="Monastir">Monastir </option>
+                      <option value="Nabeul">Nabeul</option>
+                      <option value="Sfax">Sfax </option>
+                      <option value="Sidi_Bouzid">Sidi Bouzid</option>
+                      <option value="Siliana">Siliana</option>
+                      <option value="Sousse">Sousse</option>
+                      <option value="Tataouine">Tataouine</option>
+                      <option value="Tozeur">Tozeur</option>
+                      <option value="Tunis">Tunis</option>
+                      <option value="Zaghouan">Zaghouan</option></select>
+                      </span></p>
+                         
+                      <img src="images/suguer.jpg" alt=""style="width: 361px;height: 250px;"> 
+                      
+                    
+                  
+                 
+                      
+                      <p style="color: #ff25ff; font-size: 21px;"> Standard ou personalisé (obligatoire) <br> <br><br> 
+                   
+								  <select onchange="showDiv(this)" name="type"  aria-required="true" aria-invalid="false" style="width:324px;padding:10px 8px 10px 15px;color:#717efb;outline:none;margin:0;font:14px;background-color:#fff;">
+                      <option style="line-height: 50px;"value="goblet_standard">standard</option>
+                      <option value="goblet_personalise">personalisé</option></select>
+                  
+                  
+                  <div id="standard_div" style="display: block;">
+                      <p style="color: #ff25ff; font-size: 21px;"> Quantité (obligatoire)<br> <br><br> 
+                      <span >
+                     <select name="qt"  aria-required="true" aria-invalid="false" style="width:324px;padding:10px 8px 10px 15px;color:#717efb;outline:none;margin:0;font:14px;background-color:#fff;">
+                      <option style="line-height: 50px;"value="1000 pièces">1000 pièces</option>
+                      <option value="2000 pièces">2000 pièces</option>
+                      <option value="3000 pièces">3000 pièces</option>
+                      <option value="4000 pièces">4000 pièces</option>
+                      <option value="5000 pièces">5000 pièces</option>
+                      <option value="6000 pièces">6000 pièces</option>
+                      <option value="7000 pièces">7000 pièces</option>
+                      <option value="8000 pièces">8000 pièces</option>
+                      <option value="9000 pièces">9000 pièces</option>
+                      <option value="10000 pièces">10000 pièces</option>
+                      </select>
+                      </span></p>
+                   </div>   
+                      
+                      
+                      
+                  <div id="hidden_div" style="display: none;">
+                  
+                    <p style="color: #ff25ff; font-size: 21px;"> Quantité (obligatoire)<br> <br><br> 
+                      <span >
+                     <select name="qt"  aria-required="true" aria-invalid="false" style="width:324px;padding:10px 8px 10px 15px;color:#717efb;outline:none;margin:0;font:14px;background-color:#fff;">
+                      <option style="line-height: 50px;"value="10000 pièces">10000 pièces</option>
+                      <option value="20000 pièces">200000 pièces</option>
+                      <option value="30000 pièces">300000 pièces</option>
+                      <option value="40000 pièces">40000 pièces</option>
+                      <option value="50000 pièces">50000 pièces</option>
+                      <option value="60000 pièces">60000 pièces</option>
+                      <option value="70000 pièces">70000 pièces</option>
+                      <option value="80000 pièces">80000 pièces</option>
+                      <option value="90000 pièces">90000 pièces</option>
+                      <option value="100000 pièces">100000 pièces</option>
+                      </select>
+                      </span></p>
+                  
+                   <p style="color: #ff25ff; font-size: 21px;">nombre des couleurs (obligatoire) <br> 
+                  <select  name="nbr_couleur"  aria-required="true" aria-invalid="false" style="width:324px;padding:10px 8px 10px 15px;color:#717efb;outline:none;margin:0;font:14px;background-color:#fff;">
+                      <option style="line-height: 50px;"value="1_couleur">1</option>
+                      <option value="2 couleur">2</option>
+                      <option value="3 couleur">3</option>
+                      <option value="4 couleur">4</option>
+                      <option value="5 couleur">5</option>
+                      <option value="6 couleur">6</option>
+                      <option value="7 couleur">7</option>
+                      <option value="8 couleur">8</option>
+                      <option value="9 couleur">9</option>
+                      <option value="10 couleur">10</option>
+                     
+                      </select>
+                      <br><br>
+                      <textarea rows="5" cols="38" onfocus="if(this.value == 'description:') { this.value = ''; }" 
+                      						 onblur="if(this.value == '') { this.value = 'description:'; }"
+                      						  name="description">description:</textarea>
+                  </p> 
+                  </div>
+                     </p>
+                      <div class="formBtn margLeft">
+                       <input  type="submit"  value='envoyer' class="link3">
+                      </div>
+                     
+                       
+                 </form>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" >
+ function uncheckOcraft(elem) {
+   $('input.couche').not(elem).prop('checked', !elem.checked);
+   $('input.craft_blanchi').not(elem).prop('checked', !elem.checked);
+ }
+ function uncheckOcraft_blanchi(elem) {
+   $('input.couche').not(elem).prop('checked', !elem.checked);
+   $('input.craft').not(elem).prop('checked', !elem.checked);
+ }
+ function uncheckOcouche(elem) {
+   $('input.craft_blanchi').not(elem).prop('checked', !elem.checked);
+   $('input.craft').not(elem).prop('checked', !elem.checked);
+ }
+ 
+ 
+function showDiv(elem){
+   if(elem.value == "goblet_personalise")
+   {
+      document.getElementById('hidden_div').style.display = "block";
+      	document.getElementById('standard_div').style.display = "none";
+     }
+   if(elem.value == "goblet_standard") 
+   {   
+      	document.getElementById('hidden_div').style.display = "none";
+      	document.getElementById('standard_div').style.display = "block";
+    }
+      	
+}
+ 
+   
+</script>
+</html>
