@@ -1,0 +1,121 @@
+<html>
+<head>
+<meta charset="utf-8">
+<!--Fonts-->
+<link href="http://fonts.googleapis.com/css?family=Anton" rel="stylesheet" type="text/css">
+<!-- by Ameni TLILI mail:ameni1tlili@gmail.com tel:55752363-->
+<!--CSS-->
+<link rel="stylesheet" href="css/devis.css">
+</head>
+<body style="min-height: 1149px; overflow: visible;">
+
+<a href="index.html" ><img src="images/cup.png" alt="" class="logo_devis"></a>
+<div id="container">
+
+				<form action="devis.php">
+                                        
+                      <input class="input" type="text"  onfocus="if(this.value == 'Nom:') { this.value = ''; }" 
+                      							onblur="if(this.value == '') { this.value = 'Nom:'; }"
+ 														value="Nom:" name='nom'>
+                    
+                     
+                  	 <input class="input" type="text" onfocus="if(this.value == 'E-mail:') { this.value = ''; }" 
+                      						  onblur="if(this.value == '') { this.value = 'E-mail:'; }"
+ 													  value="E-mail:" name='email'>
+                    
+                      <input class="input" type="text" onfocus="if(this.value == 'Tél: ') { this.value = ''; }" 
+                      						  onblur="if(this.value == '') { this.value = 'Tél: '; }"
+ 													  value="Tél: "  name='tel'>
+                    <input class="input" type="text"  onfocus="if(this.value == 'adr:') { this.value = ''; }" 
+                      						 onblur="if(this.value == '') { this.value = 'adr:'; }"
+ 													 value="adr:"  name='adr'>
+                  
+                       
+                       <p style="color: #ff25ff; font-size: 21px;">Papier (obligatoire)<br><br>
+                      
+                      <div class="imgcheck">
+								  <div id="imgcheck_craft">
+    								  <input type='radio' style="display:none;" name='craft' value='craft' id="craft" checked class="craft" onchange="uncheckOcraft(this)"/><label for="craft"></label>
+									</div>  
+									<div id="imgcheck_craft_blanchi">
+    								  <input type='radio' style="display:none;" name='craft_blanchi' value='craft_blanchi' id="craft_blanchi" class="craft_blanchi" onchange="uncheckOcraft_blanchi(this)"/><label for="craft_blanchi"></label>
+									</div> 
+									<div id="imgcheck_couche">
+    								  <input type='radio' style="display:none;" name='couche' value='couche' id="couche" class="couche" onchange="uncheckOcouche(this)"  /><label for="couche"></label>
+									</div>
+							</div>  
+							               
+                      
+                      <input class="input" type="text" onfocus="if(this.value == 'autre type de papier :') { this.value = ''; }" 
+                      						 onblur="if(this.value == '') { this.value = 'autre type de papier :'; }"
+ 													 name="type_papier"  value="autre type de papier :"   aria-invalid="false">
+                     
+                      </p>   <br><br>   
+                       
+                     
+                       
+                       <p style="color: #ff25ff; font-size: 21px;">Taille (obligatoire)<br><br>
+                      
+                      <div class="goblet">
+								  <div id="goblet1">
+    								  <input type='radio' style="display:none;" name='goblet1' value='goblet1' id="goblet1" checked class="goblet1" onchange="uncheckOgoblet1(this)"/><label for="goblet1"></label>
+									</div>  
+									<div id="goblet2">
+    								  <input type='radio' style="display:none;" name='goblet2' value='goblet2' id="goblet2" class="goblet2" onchange="uncheckOgoblet2(this)"/><label for="goblet2"></label>
+									</div> 
+									<div id="goblet3">
+    								  <input type='radio' style="display:none;" name='goblet3' value='goblet3' id="goblet3" class="goblet3" onchange="uncheckOgoblet3(this)"  /><label for="goblet3"></label>
+									</div>
+							</div>  
+							               
+                      
+                      <input class="input" type="text" onfocus="if(this.value == 'autre type de papier :') { this.value = ''; }" 
+                      						 onblur="if(this.value == '') { this.value = 'autre type de papier :'; }"
+ 													 name="type_papier"  value="autre type de papier :"   aria-invalid="false">
+                     
+                      </p>   <br><br>   
+                     
+                      
+                      <p style="color: #ff25ff; font-size: 21px;"> hauteur :<br><span >
+                      <select name="menu-hauteur"  aria-required="true" aria-invalid="false" style="width:324px;padding:10px 8px 10px 15px;color:#717efb;outline:none;margin:0;font:14px;background-color:#fff;">
+                      <option style="line-height: 50px;"value="kraft brun">kraft brun</option>
+                      <option value="Kraft blanchi">Kraft blanchi</option>
+                      <option value="Couché">Couché</option>
+                      <option value="Offset">Offset</option>
+                      <option value="autres">autres</option></select>
+                      </span></p>
+                      
+                      </span></p>
+                       
+                 </form>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" >
+ function uncheckOcraft(elem) {
+   $('input.couche').not(elem).prop('checked', !elem.checked);
+   $('input.craft_blanchi').not(elem).prop('checked', !elem.checked);
+ }
+ function uncheckOcraft_blanchi(elem) {
+   $('input.couche').not(elem).prop('checked', !elem.checked);
+   $('input.craft').not(elem).prop('checked', !elem.checked);
+ }
+ function uncheckOcouche(elem) {
+   $('input.craft_blanchi').not(elem).prop('checked', !elem.checked);
+   $('input.craft').not(elem).prop('checked', !elem.checked);
+ }
+ 
+  function uncheckOgoblet1(elem) {
+   $('input.goblet3').not(elem).prop('checked', !elem.checked);
+   $('input.goblet2').not(elem).prop('checked', !elem.checked);
+ }
+ function uncheckOgoblet2(elem) {
+   $('input.goblet1').not(elem).prop('checked', !elem.checked);
+   $('input.goblet3').not(elem).prop('checked', !elem.checked);
+ }
+ function uncheckOgoblet3(elem) {
+   $('input.goblet2').not(elem).prop('checked', !elem.checked);
+   $('input.goblet1').not(elem).prop('checked', !elem.checked);
+ }
+</script>
+</html>
