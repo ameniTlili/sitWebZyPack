@@ -1,0 +1,426 @@
+body {
+	
+	background: url(../images/picture1.jpg) no-repeat;
+	background-size:cover;
+	background-attachment: fixed;
+	background-color:pink;
+	position:absolute;
+	min-width:940px;
+	min-height:800px;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	text-align: center;
+
+}
+a {
+	text-decoration:none;
+	outline:none;
+	font:bold 11px/18px 'Arial', sans-serif;
+	color:#c257f2;
+}
+p {
+	font:14px/21px 'Arial', sans-serif;
+	color:#000071;
+}
+.logo_devis{
+	width:250px;
+	height: 150px;
+}
+#container {
+	width:836px;
+	padding:50px 25px 50px 79px;
+	background:url(../images/pattern3.png) repeat;
+	overflow:hidden;
+	margin: 0 auto;
+	}
+.input {
+	width:324px;
+	padding:10px 8px 10px 15px;
+	color:#717efb;
+	outline:none;
+	margin:0;
+	font:14px 'Arial';
+	background-color:#fff;
+	-webkit-box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.11);
+	box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.11);
+	cursor: pointer;
+}
+textarea {
+	overflow:auto;
+	margin:0;
+	width:324px;
+	height:214px;
+	padding:10px 8px 10px 15px;
+	color:#717efb;
+	resize:none;
+	outline:none;
+	font:14px 'Arial';
+	background-color:#fff;
+	-webkit-box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.11);
+	box-shadow:  0px 1px 4px 0px rgba(0, 0, 0, 0.11);
+}
+.link3 {
+	position:relative;
+	text-decoration:none;
+	
+	display:inline-block;
+	padding:8px 15px 10px 12px;
+	font:20px 'Anton', sans-serif;
+	color:#ff25ff;
+	text-transform:uppercase;
+	text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+//chackbox image 
+
+input[type=radio] {
+display:none;
+cursor: pointer;
+} 
+.imgcheck{
+float: left;
+padding: 25px;
+}
+#imgcheck_craft{
+float: left;
+margin-left: 10px;}
+#imgcheck_craft input[type=radio] + label
+{
+background: url(../images/pap_craft.png) no-repeat;
+background-size: cover;
+height: 250px;
+width: 250px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#imgcheck_craft input[type=radio]:checked + label
+{
+background: url(../images/pap_craft_check.png) no-repeat;
+background-size: cover;
+height: 250px;
+width: 250px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#imgcheck_craft_blanchi{
+float: left;
+margin-left: 10px;}
+#imgcheck_craft_blanchi input[type=radio] + label
+{
+background: url(../images/pap_craft_blanchi.png) no-repeat;
+background-size: cover;
+height: 250px;
+width: 250px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#imgcheck_craft_blanchi input[type=radio]:checked + label
+{
+background: url(../images/pap_craft_blanchi_check.png) no-repeat;
+background-size: cover;
+height: 250px;
+width: 250px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+
+#imgcheck_couche{
+float: left;
+margin-left: 10px;}
+#imgcheck_couche input[type=radio] + label
+{
+background: url(../images/pap_couche.png) no-repeat;
+background-size: cover;
+height: 250px;
+width: 250px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#imgcheck_couche input[type=radio]:checked + label
+{
+background: url(../images/pap_couche_check.png) no-repeat;
+background-size: cover;
+height: 250px;
+width: 250px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+
+
+
+//goblet
+
+.goblet{
+float: left;
+padding: 25px;
+}
+#goblet_1{
+float: left;
+margin-left: 5px;}
+#goblet_1 input[type=radio] + label
+{
+background: url(../images/goblet1.png) no-repeat;
+background-size: cover;
+height: 300px;
+width: 200px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#goblet_1 input[type=radio]:checked + label
+{
+background: url(../images/goblet1_check.png) no-repeat;
+background-size: cover;
+height: 300px;
+width: 200px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#goblet_2{
+float: left;
+margin-left: 5px;}
+#goblet_2 input[type=radio] + label
+{
+background: url(../images/goblet2.png) no-repeat;
+background-size: cover;
+height: 300px;
+width: 200px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#goblet_2 input[type=radio]:checked + label
+{
+background: url(../images/goblet2_check.png) no-repeat;
+background-size: cover;
+height: 300px;
+width: 200px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+#goblet_3{
+float: left;
+margin-left: 5px;}
+#goblet_3 input[type=radio] + label
+{
+background: url(../images/goblet3.png) no-repeat;
+background-size: cover;
+height: 300px;
+width: 200px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#goblet_3 input[type=radio]:checked + label
+{
+background: url(../images/goblet3_check.png) no-repeat;
+background-size: cover;
+height: 300px;
+width: 200px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+#goblet_4{
+float: left;
+margin-left: 5px;}
+#goblet_4 input[type=radio] + label
+{
+background: url(../images/goblet4.png) no-repeat;
+background-size: cover;
+height: 300px;
+width: 200px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#goblet_4 input[type=radio]:checked + label
+{
+background: url(../images/goblet4_check.png) no-repeat;
+background-size: cover;
+height: 300px;
+width: 200px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+//party
+
+.party{
+float: left;
+padding: 30px;
+padding-bottom: 10px;
+}
+#pack_party {
+float: left;
+margin: 0 auto;
+width:800px; 
+padding-bottom: 10px;}
+#pack_party  input[type=radio] + label
+{
+background: url(../images/pack_party.jpg) no-repeat;
+background-size: cover;
+height: 250px;
+width: 250px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#pack_party  input[type=radio]:checked + label
+{
+background: url(../images/pack_party_check.jpg) no-repeat;
+background-size: cover;
+height: 250px;
+width: 250px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+
+}
+#chapeau_party {
+float: left;
+margin-left: 8px;}
+#chapeau_party  input[type=checkbox] + label
+{
+background: url(../images/chapeaux.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#chapeau_party  input[type=checkbox]:checked + label
+{
+background: url(../images/chapeaux_check.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+#masque_party {
+float: left;
+margin-left: 8px;}
+#masque_party  input[type=checkbox] + label
+{
+background: url(../images/masque.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#masque_party  input[type=checkbox]:checked + label
+{
+background: url(../images/masque_check.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+#ass_carr_party {
+float: left;
+margin-left: 8px;}
+#ass_carr_party  input[type=checkbox] + label
+{
+background: url(../images/ass_carr.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#ass_carr_party  input[type=checkbox]:checked + label
+{
+background: url(../images/ass_carr_check.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+#ass_cerc_party {
+float: left;
+margin-left: 8px;}
+#ass_cerc_party  input[type=checkbox] + label
+{
+background: url(../images/ass_cerc.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#ass_cerc_party  input[type=checkbox]:checked + label
+{
+background: url(../images/ass_cerc_check.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+#fourchette_party {
+float: left;
+margin-left: 8px;}
+#fourchette_party  input[type=checkbox] + label
+{
+background: url(../images/fourchette.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#fourchette_party  input[type=checkbox]:checked + label
+{
+background: url(../images/fourchette_check.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+
+#paille_party{
+float: left;
+margin-left: 8px;}
+#paille_party input[type=checkbox] + label
+{
+background: url(../images/paille.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+cursor: pointer;
+}
+#paille_party input[type=checkbox]:checked + label
+{
+background: url(../images/paille_check.jpg) no-repeat;
+background-size: cover;
+height: 125px;
+width: 125px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+label{
+border-radius: 10px;
+border: 1px solid #ffcfff;
+ }
